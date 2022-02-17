@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            background: url(./images/icon01/bg.jpg) center no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+
+            width: 280px;
+            /* width: 110px; */
+            height: 820px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        /* .nav:hover {
+            width: 280px;
+        } */
+
+        .header {
+            width: 250px;
+            height: 70px;
+            margin-left: 25px;
+            margin-top: 25px;
+            overflow: hidden;
+        }
+
+        .header img {
+            float: left;
+            width: 50px;
+            border-radius: 50%;
+            border: 4px solid darkgray;
+        }
+
+        .header .introduction {
+            float: left;
+            margin-left: 35px;
+        }
+
+        .header p {
+            margin-top: 0;
+        }
+
+        .header h2 {
+            margin-top: 0;
+        }
+
+        .line {
+            margin-top: 25px;
+            margin-left: 25px;
+            width: 60px;
+            height: 2px;
+            background-color: rgba(255, 254, 255, 0.3);
+            transition: 0.5s;
+        }
+
+        .nav:hover .line {
+            width: 230px;
+        }
+
+        .title {
+            width: 60px;
+            margin-top: 20px;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        .base {
+            margin-left: 25px;
+        }
+
+        .server {
+            margin-left: 25px;
+        }
+
+        .licon {
+            width: 60px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ricon {
+            width: 0px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 0.3s;
+            opacity: 0;
+        }
+
+        .licon img {
+            width: 30px;
+        }
+
+        .ricon img {
+            width: 23px;
+            color: #59d3c9;
+        }
+
+        .item {
+            width: 230px;
+            display: flex;
+            position: relative;
+            margin-bottom: 20px;
+            transition: 0.5s;
+            border-radius: 6px;
+        }
+
+        .item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .item .con {
+            width: 0px;
+            /* margin: auto; */
+            text-align: center;
+            line-height: 50px;
+            opacity: 0;
+        }
+
+        .nav:hover .ricon {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            opacity: 1;
+        }
+
+        .nav:hover .con {
+            width: 100px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="nav">
+            <div class="header">
+                <img src="./admin_jansen.jpg" alt="">
+                <div class="introduction">
+                    <p>Hi Boy</p>
+                    <h2>Good！</h2>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="menu">
+                <p class="title">menu</p>
+                <div class="base">
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/dayin.png" alt=""></div>
+                        <div class="con">DashBoard</div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/erweima.png" alt=""></div>
+                        <div class="con">Products</div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/fenlei.png" alt=""></div>
+                        <div class="con">Campaigns</div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/kuaisu.png" alt=""></div>
+                        <div class="con">Sales</div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/shipin.png" alt=""></div>
+                        <div class="con">Discount</div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p class="title">Server6</p>
+                <div class="server">
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/yinliang.png" alt=""></div>
+                        <div class="con">item</div>
+                        <div class="ricon"><img src="./images/icon01/xiangce.png" alt=""></div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/wangye.png" alt=""> </div>
+                        <div class="con">Chat</div>
+                    </div>
+                    <div class="item">
+                        <div class="licon"><img src="./images/icon01/pifu.png" alt=""></div>
+                        <div class="con">Setting</div>
+                        <div class="ricon"><img src="./images/icon01/jiangbei.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
